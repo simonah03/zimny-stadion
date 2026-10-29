@@ -4,7 +4,7 @@ Rules for AI coding agents. Codex reads this file directly; Claude Code reads it
 
 ## Project
 
-<!-- Replace with one paragraph: what the app does and for whom. -->
+A web app for an ice rink (winter stadium). The public can see key information about the stadium, check available time slots and book the ice, and buy match tickets. The app also includes an e-shop selling jerseys and other match-day items, which are delivered by courier.
 A full-stack TypeScript app: `web/` is the React frontend (Vite), `api/` is the Node.js backend (Express).
 
 This is a learning project. The developer is a student who must understand every line that goes into a pull request.

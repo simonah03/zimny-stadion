@@ -1,3 +1,7 @@
+# Zimny Stadion
+
+A web app for an ice rink. The public can find all the key information, see available time slots for booking the ice, and buy match tickets. The app also includes an e-shop selling jerseys and other match-day items, which are delivered by courier. 
+
 # Project template
 
 Starter for PixelNode Academy projects: a React frontend and a Node.js API in TypeScript, with tests, linting, CI and rules for AI coding agents.
