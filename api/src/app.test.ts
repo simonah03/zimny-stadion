@@ -11,6 +11,22 @@ describe('GET /api/health', () => {
   })
 })
 
+describe('GET /api/opening-hours', () => {
+  it('returns opening and closing times for every day of the week', async () => {
+    const res = await request(createApp()).get('/api/opening-hours')
+
+    expect(res.status).toBe(200)
+    expect(res.body.openingHours).toHaveLength(7)
+    for (const entry of res.body.openingHours) {
+      expect(entry).toEqual({
+        day: expect.any(String),
+        opens: expect.stringMatching(/^\d{2}:\d{2}$/),
+        closes: expect.stringMatching(/^\d{2}:\d{2}$/),
+      })
+    }
+  })
+})
+
 describe('errors', () => {
   it('returns JSON 404 for an unknown API route', async () => {
     const res = await request(createApp()).get('/api/nope')
